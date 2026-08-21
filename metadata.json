@@ -1,0 +1,6 @@
+{
+  "name": "Sharon's Guest House",
+  "description": "Sharon's Guest House & Conference Venue in Kabulonga, Lusaka, Zambia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

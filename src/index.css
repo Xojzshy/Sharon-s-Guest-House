@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --color-sage-50: #f2f6f4;
+  --color-sage-100: #e2ece7;
+  --color-sage-200: #c6d9d0;
+  --color-sage-300: #9cbcae;
+  --color-sage-500: #557c6b;
+  --color-sage-600: #426355;
+  --color-sage-700: #365045;
+  --color-sage-800: #2b3e36;
+  --color-sage-900: #1b2823;
+
+  --color-cream-50: #fdfbf7;
+  --color-cream-100: #f7f3eb;
+  --color-cream-200: #ede5d5;
+  --color-cream-300: #decfa8;
+
+  --color-gold-400: #dcb33e;
+  --color-gold-500: #c59b27;
+  --color-gold-600: #a9831d;
+
+  --color-terracotta-100: #f6e8e3;
+  --color-terracotta-200: #e9cbbf;
+  --color-terracotta-500: #c86d51;
+  --color-terracotta-600: #b05a40;
+}
+
+@layer base {
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-cream-50);
+    color: var(--color-sage-800);
+  }
+}
+
+/* Garden leafy motif background pattern */
+.bg-leaf-pattern {
+  background-image: radial-gradient(#557c6b 0.75px, transparent 0.75px), radial-gradient(#557c6b 0.75px, #fdfbf7 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  opacity: 0.15;
+}
+
+/* Custom scrollbar for smooth feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f3eb;
+}
+::-webkit-scrollbar-thumb {
+  background: #c6d9d0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #557c6b;
+}
+
